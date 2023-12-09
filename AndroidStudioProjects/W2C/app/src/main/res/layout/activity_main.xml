@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/topImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_123764_275529_p68kn6_486_02_1" />
+
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/citybottom" />
+
+        <Button
+            android:id="@+id/loginButton"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:width="277dp"
+            android:height="44dp"
+
+            android:fontFamily="@font/lato_bold"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/login"
+            android:textColor="@color/white"
+
+            android:textStyle="bold"
+            style="@style/MyButtonStyle"
+             />
+
+        <Button
+            android:id="@+id/registerButton"
+            style="android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:width="277dp"
+            android:height="44dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/register"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="485dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/w2c"
+
+            android:textColor="#843434"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

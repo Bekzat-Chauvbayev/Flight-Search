@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/topImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_123764_275529_p68kn6_486_02_1" />
+
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/citybottom" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/topImageView"
+            app:srcCompat="@drawable/device" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView3"
+            android:text="@string/register"
+            android:fontFamily="@font/lato_bold"
+            android:textColor="#843434"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+
+
+        />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/register"
+            android:layout_width="352dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto"
+
+                android:text="ВАШ ГОРОД"
+
+
+                android:textSize="13dp" />
+
+            <Spinner
+                android:background="@drawable/spinner_border"
+                android:id="@+id/spinner"
+
+                android:layout_height="wrap_content"
+                android:popupBackground="#FFFFFF"
+
+                 android:layout_width="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/linear1"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/fio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto"
+
+                android:text="ВАШ ФИО"
+
+
+                android:textSize="13dp" />
+
+            <EditText
+                android:background="@drawable/spinner_border"
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textAlignment="inherit"
+                android:inputType="text"
+                android:hint="Напишите свое ФИО" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/linear2"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto"
+
+                android:text="ПАРОЛЬ"
+
+
+                android:textSize="13dp" />
+
+            <EditText
+                android:background="@drawable/spinner_border"
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textAlignment="inherit"
+                android:inputType="textPassword"
+                android:hint="Придумайте пароль" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/linear3"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:id="@+id/passwordAgain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto"
+
+                android:text="ПОДТВЕРДИТЬ ПАРОЛЬ"
+
+
+                android:textSize="13dp" />
+
+            <EditText
+                android:background="@drawable/spinner_border"
+                android:id="@+id/passwordAgainText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textAlignment="inherit"
+                android:inputType="textPassword"
+                android:hint="Подтвердите пароль" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="277dp"
+            android:layout_height="44dp"
+            android:text="Дальше"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:fontFamily="@font/lato_bold"
+            android:background="@color/primaryColor"
+            android:shadowColor="@color/primaryColor"
+            android:textColorHint="@color/primaryColor"
+            android:layout_below="@id/linear4"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

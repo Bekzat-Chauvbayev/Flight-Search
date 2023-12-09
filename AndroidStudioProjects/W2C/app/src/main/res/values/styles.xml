@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyButtonStyle">
+        <item name="android:background">#843434</item>
+        <!-- Другие настройки стиля -->
+    </style>
+    
+    <style name="linearStyle">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+</resources>
